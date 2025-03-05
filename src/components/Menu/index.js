@@ -1,6 +1,18 @@
+import { Link } from 'react-router-dom';
+import styles from './Menu.module.css';
+
 const Menu = () => {
   return (
-    <header>Menu de navegação...</header>
+    <header>
+      <nav className={styles.navegacao}>
+        <Link className={styles.link} to='/'>
+          Início
+        </Link>
+        <Link className={styles.link} to='/sobre'>
+          Sobre mim
+        </Link>
+      </nav>
+    </header>
   );
 }
 
