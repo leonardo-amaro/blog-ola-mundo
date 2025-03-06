@@ -1,10 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
 import Index from './pages/Index';
 import Sobre from './pages/Sobre';
 import Menu from './components/Menu';
 
-function App() {
+function AppRoutes() {
   return (
     <BrowserRouter>
       <Menu />
@@ -16,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppRoutes;
