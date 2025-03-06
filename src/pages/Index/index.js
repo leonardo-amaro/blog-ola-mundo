@@ -1,7 +1,12 @@
+import Banner from "components/Banner";
+
 export default function Index() {
   return (
-    <h1>
-      Olá, mundo!
-    </h1>
+    <main>
+      <Banner />
+      <h1>
+        Olá, mundo!
+      </h1>
+    </main>
   );
 }
