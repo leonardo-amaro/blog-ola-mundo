@@ -1,5 +1,6 @@
 import styles from "./Index.module.css";
 import Banner from "components/Banner";
+import Post from "components/Post";
 import posts from "json/posts.json";
 
 export default function Index() {
@@ -9,7 +10,7 @@ export default function Index() {
       <ul className={styles.posts}>
         {posts.map((post) => (
           <li key={post.id}>
-            {post.titulo}
+            <Post post={post} />
           </li>
         ))}
       </ul>
