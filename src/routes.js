@@ -11,8 +11,8 @@ function AppRoutes() {
       <Menu />
       <Routes>
         <Route path='/' element={ <PaginaPadrao /> }>
-          <Route path='/' element={ <Index /> } />
-          <Route path='/sobre' element={ <Sobre /> } />
+          <Route index element={ <Index /> } />
+          <Route path='sobre' element={ <Sobre /> } />
         </Route>
       </Routes>
       <Rodape />
