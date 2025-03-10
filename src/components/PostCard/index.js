@@ -1,6 +1,6 @@
 import styles from "./PostCard.module.css";
 
-const Post = ({ post }) => {
+const PostCard = ({ post }) => {
   return (
     <div className={styles.post}>
       <img 
@@ -16,4 +16,4 @@ const Post = ({ post }) => {
   );
 }
 
-export default Post;
+export default PostCard;
