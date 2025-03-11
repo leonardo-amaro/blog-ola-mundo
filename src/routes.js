@@ -5,6 +5,7 @@ import Menu from './components/Menu';
 import Rodape from 'components/Rodape';
 import PaginaPadrao from 'components/PaginaPadrao';
 import Post from 'pages/Post';
+import Erro404 from 'pages/Erro404';
 
 function AppRoutes() {
   return (
@@ -16,6 +17,7 @@ function AppRoutes() {
           <Route path='sobre' element={ <Sobre /> } />
           <Route path='post/:id' element={ <Post /> } />
         </Route>
+        <Route path='*' element={ <Erro404 /> } />
       </Routes>
       <Rodape />
     </BrowserRouter>
