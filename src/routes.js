@@ -15,8 +15,8 @@ function AppRoutes() {
         <Route path='/' element={ <PaginaPadrao /> }>
           <Route index element={ <Index /> } />
           <Route path='sobre' element={ <Sobre /> } />
-          <Route path='post/:id' element={ <Post /> } />
         </Route>
+        <Route path='post/:id' element={ <Post /> } />
         <Route path='*' element={ <Erro404 /> } />
       </Routes>
       <Rodape />
