@@ -1,8 +1,11 @@
 import BotaoPrincipal from "components/BotaoPrincipal";
 import styles from "./Erro404.module.css";
 import erro404 from "assets/erro_404.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Erro404() {
+  const navegar = useNavigate();
+
   return (
     <>
       <div className={styles.conteudoContainer}>
@@ -19,7 +22,10 @@ export default function Erro404() {
           inicial.
         </p>
 
-        <div className={styles.botaoContainer}>
+        <div 
+          className={styles.botaoContainer}
+          onClick={() => navegar(-1)}
+        >
           <BotaoPrincipal tamanho="lg">
             Voltar
           </BotaoPrincipal>
