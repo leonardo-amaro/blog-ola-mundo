@@ -15,7 +15,7 @@ const PostCard = ({ post }) => {
           {post.titulo}
         </h2>
         <BotaoPrincipal>
-          Ler...
+          Ler
         </BotaoPrincipal>
       </div>
     </Link>

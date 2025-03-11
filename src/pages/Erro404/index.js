@@ -1,3 +1,4 @@
+import BotaoPrincipal from "components/BotaoPrincipal";
 import styles from "./Erro404.module.css";
 import erro404 from "assets/erro_404.png";
 
@@ -19,7 +20,9 @@ export default function Erro404() {
         </p>
 
         <div className={styles.botaoContainer}>
-          <button>Voltar</button>
+          <BotaoPrincipal tamanho="lg">
+            Voltar
+          </BotaoPrincipal>
         </div>
 
         <img
